@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <title>Bootstrap網頁</title>    
+  </head>
+  <body style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+	  <div class="container-fluid">
+        <a class="navbar-brand" href="#">我的國內旅遊景點</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">台中景點</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="opera.html">臺中國家歌劇院</a>
+				<a class="dropdown-item" href="lavender.html">新社薰衣草森林</a>
+				<a class="dropdown-item" href="libao.html">麗寶樂園</a>
+
+              </div>
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">屏東景點</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="chingjing.html">清靜莊園</a>
+				<a class="dropdown-item" href="nmmba.html">國立海洋生物博物館</a>
+				<a class="dropdown-item" href="sikadeer.html">鹿境梅花鹿生態園區</a>
+
+				
+            </li>
+          </ul>
+		  <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>  
+        </div>		
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>
+      <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+		  <!-- 輪播指示 -->
+		  <ol class="carousel-indicators">
+			<li data-bs-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="1"></li>
+			<li data-bs-target="#myCarousel" data-bs-slide-to="2"></li>
+		  </ol>
+		  <!-- 輪播內容 -->
+		  <div class="carousel-inner">
+			<div class="carousel-item active">
+			  <img src="19.jpg" height="800" class="d-block w-100" alt="真善美湖區">
+			  <div class="carousel-caption d-none d-md-block">
+				<h5>屏東高士神社</h5>
+			  </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="20.jpg" height="800" class="d-block w-100" alt="熊布朗宮">
+			  <div class="carousel-caption d-none d-md-block">
+				<h5>台中草悟系 七月半</h5>
+			  </div>
+			</div>
+			<div class="carousel-item">
+			  <img src="22.jpg" height="800" class="d-block w-100" alt="雪的美術館">
+			  <div class="carousel-caption d-none d-md-block">
+				<h5>屏東墾丁海岸線</h5>
+			  </div>
+			</div>
+		  </div>
+		  <!-- 輪播控制 -->
+		  <a class="carousel-control-prev" href="#myCarousel" data-bs-slide="prev">
+			<span class="carousel-control-prev-icon"></span>
+			<span class="visually-hidden">Previous</span></a>
+		  <a class="carousel-control-next" href="#myCarousel" data-bs-slide="next">
+			<span class="carousel-control-next-icon"></span>
+			<span class="visually-hidden">Next</span></a>
+		</div>	  
+	  </div>
+	</main>
+	<!-- 觸發互動視窗的按鈕 -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+      data-bs-target="#myModal1">卡悠峯瀑布</button>
+	<button type="button" class="btn btn-primary" data-bs-toggle="modal" 
+      data-bs-target="#myModal2">高美濕地</button>
+	  <script>
+       var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+       var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+       return new bootstrap.Tooltip(tooltipTriggerEl)
+       });
+      </script>
+      <!-- 互動視窗 -->
+      <div class="modal fade" id="myModal1" tabindex="-1">
+       <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+          <h3 class="modal-title">卡悠峯瀑布</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+          <img src="21.jpg" width="50%" class="img-fluid">
+          <p class="h3 text-end">屏東</p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-toggle="tooltip" 
+            data-bs-placement="top" title="卡悠峯瀑布">美景一</button>
+         </div>
+        </div>
+       </div>
+      </div>
+      <!-- 互動視窗 -->
+      <div class="modal fade" id="myModal2" tabindex="-1">
+       <div class="modal-dialog">
+        <div class="modal-content">
+         <div class="modal-header">
+          <h3 class="modal-title">高美濕地</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+         </div>
+         <div class="modal-body">
+          <img src="23.jpg" width="50%" class="img-fluid">
+          <p class="h3 text-end">台中</p>
+         </div>
+         <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-container="body"  
+           data-bs-toggle="popover" data-bs-placement="top" data-bs-content="高美濕地">美景二</button>
+		   <script> 
+			var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'));
+            var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+            return new bootstrap.Popover(popoverTriggerEl)
+           });
+
+           </script>
+         </div>
+        </div>
+       </div>
+      </div>
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2021日光多媒體&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer> 	
+	
+  </body>
+</html>

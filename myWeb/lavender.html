@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Bootstrap網頁</title>    
+  </head>
+  <body  background="bg1.jpg" style="padding-top:50px">
+    <!-- 導覽列 -->
+    <nav class="navbar navbar-light bg-light navbar-expand-md fixed-top">
+	  <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">我的國內旅遊景點</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar1">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbar1">
+          <ul class="navbar-nav me-auto">           
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">台中景點</a>
+              <div class="dropdown-menu">
+               <a class="dropdown-item" href="opera.html">臺中國家歌劇院</a>
+				<a class="dropdown-item" href="lavender.html">新社薰衣草森林</a>
+				<a class="dropdown-item" href="libao.html">麗寶樂園</a>
+              </div>
+            </li>
+			<li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">屏東景點</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="chingjing.html">清靜莊園</a>
+				<a class="dropdown-item" href="nmmba.html">國立海洋生物博物館</a>
+				<a class="dropdown-item" href="sikadeer.html">鹿境梅花鹿生態園區</a>
+              </div>
+            </li>
+          </ul>
+		  <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="輸入景點">
+            <button class="btn btn-outline-primary" type="submit">Search</button>
+          </form>  
+        </div>		
+      </div>
+    </nav>
+
+    <!-- 內容區 -->
+    <main>	
+      <div class="container">
+	    <h1 class="text-center mt-5">新社薰衣草森林</h1>
+		
+	    <!-- 第一個景點 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7"><br><br><br>
+            <h2>繡球花季</h2>
+            <p class="fw-bold">園區賞繡球花美景順著步道，香草鋪子是旅人會看到的第一棟建築唯美的歐風小屋，充滿童話故事的味道</p>
+		    <p class="fw-bold">繡球花季也有新佈景香草鋪子外，規畫了日式神社常見的御手洗旅人可以體驗用勺子洗手，想像自己在日本旅行比較特別
+			的是，池子裡是一顆又一顆的繡球花色彩繽紛，滿分覺得唯美又好拍</p>
+          </div>
+          <div class="col-md-5">
+            <img src="4.jpg" class="img-fluid">
+          </div>
+        </div>	
+		
+        <!-- 第二個景點 -->
+        <hr>
+        <div class="row">
+          <div class="col-md-7 order-md-5"><br><br><br>
+		    <h2>旋轉木馬</h2>
+            <p class="fw-bold">旋轉木馬象徵著孩子們的童年與稚氣坐在木馬上，搭配旋律，心情不自覺得感到愉快</p>
+		    <p class="fw-bold">森林木馬也很美這一區佈置了滿滿的繡球花，還有一隻古錐小熊，一走進這裡，就整個捨不得離開
+			旋轉木馬，是最多美圖的一區</p>
+          </div>
+          <div class="col-md-5 order-md-1">
+            <img src="5.jpg" class="img-fluid">
+          </div>
+        </div>
+		
+	    <!-- 第三個景點 -->
+	    <hr>
+        <div class="row">
+          <div class="col-md-7"><br><br><br>
+            <h2>香草鋪子</h2>
+            <p class="fw-bold">熟悉的森林小屋，還有紫衣女孩迎賓這個造景，幾乎每處薰衣草森林都看的到</p>
+		    <p class="fw-bold">香草舖子裡，販售著薰衣草的周邊商品有身體保養類、清潔用品和香皂等等…滿分當天還有試
+			用一下店裡的洗手乳洗完後，散發著香氣，很是清爽小屋裡，還有不少精美小物唷不僅適合收藏
+			當紀念，送禮也不錯</p>
+          </div>
+          <div class="col-md-5">
+            <img src="6.jpg" class="img-fluid">
+          </div>
+        </div>	  
+	  </div>
+	</main>
+	
+    <!-- 頁尾 -->
+	<footer>
+	  <div class="container">
+	    <hr>              
+        <p>&copy; 2021日光多媒體&middot;<a href="#">隱私權政策</a>&middot;<a href="#">服務條款</a></p>
+		<p class="text-end"><a href="#">Back to top</a></p>
+      </div>
+    </footer> 	
+  </body>
+</html>
